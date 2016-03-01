@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MAIN APP COLOURS-->
+    <color name="colorPrimary">#4CAF50</color>      <!-- DEFAULT COLOUR #3F51B5 -->
+    <color name="colorPrimaryDark">#2E7D32</color>  <!-- DEFAULT COLOUR #303F9F -->
+    <color name="colorAccent">#088A85</color>       <!-- DEFAULT COLOUR #FF4081 -->
+
+    <color name="colorText">#525552</color>
+    <color name="colorButtonColor">#D5D7D5</color>
+
+    <color name="btnDisabledColor">#DFE1DF</color>
+    <color name="btnDisabledTextColor">#8D958D</color>
+
+</resources>

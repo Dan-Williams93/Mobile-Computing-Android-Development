@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_new_user_registration"
+    tools:context="com.example.daniel.wil13458204_mobilecomputing.New_User_Registration"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="'NEEDS to BE A .jpg IMAGE IN THE EMULATOR GALLERY'"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/bivGetImage"
+                    android:onClick="GetImage"
+                    android:src="@drawable/anonymous"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ProfilePicText"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/FNameText"
+                android:id="@+id/tvFirstName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etFirstName"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/btnAddData" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/LNameText"
+                android:id="@+id/tvLastName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_above="@+id/etUsername"
+                android:layout_alignEnd="@+id/textView2"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etLastName"
+                android:layout_below="@+id/etFirstName"
+                android:layout_marginTop="10dp"
+                android:layout_alignEnd="@+id/etFirstName"
+                android:layout_alignStart="@+id/etFirstName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/UNameText"
+                android:id="@+id/tvUserame"
+                android:layout_above="@+id/etPassword"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignStart="@+id/textView3"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUsername"
+                android:layout_below="@+id/etLastName"
+                android:layout_alignEnd="@+id/etLastName"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/etLastName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/PassText"
+                android:id="@+id/tvPassword"
+                android:layout_above="@+id/btnAddData"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentStart="true"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:layout_below="@+id/etUsername"
+                android:layout_alignEnd="@+id/etUsername"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/etUsername"
+                android:password="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/RePassText"
+                android:layout_above="@+id/btnAddData"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentStart="true"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etRePassword"
+                android:layout_below="@+id/etUsername"
+                android:layout_alignEnd="@+id/etUsername"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/etUsername"
+                android:password="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/SQSelectText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentStart="true"
+                android:textSize="15dp"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/SQSpinner"
+                android:entries="@array/Security_Questions"
+                android:layout_below="@+id/etSearchInput"
+                android:prompt="@string/Spinner_Prompt"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Your Secure Answer"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentStart="true"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etSecurityAnswer"
+                android:layout_below="@+id/etRePassword"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RegisterButton"
+                android:id="@+id/btnAddData"
+                android:layout_below="@+id/etPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:onClick="addNewUser"
+                android:textColor="@color/colorText"
+                android:background="@drawable/custom_button_shape"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

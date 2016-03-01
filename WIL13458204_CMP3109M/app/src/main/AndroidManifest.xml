@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.daniel.wil13458204_mobilecomputing">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- SEARCH -->
+        <activity
+            android:name=".SearchRecipe"
+            android:label="@string/title_activity_search_recipe"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- GET -->
+        <activity
+            android:name=".GetRecipe"
+            android:label="@string/title_activity_get_recipe"
+            android:parentActivityName=".SearchRecipe"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.daniel.wil13458204_mobilecomputing.SearchRecipe" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- RANDOM RECIPE -->
+        <activity
+            android:name=".RandomRecipes"
+            android:label="@string/title_activity_random_recipes"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- REGISTER NEW USER -->
+        <activity
+            android:name=".New_User_Registration"
+            android:label="@string/title_activity_user__login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- USER LOGIN -->
+        <activity
+            android:name=".UserLogin"
+            android:label="@string/title_activity_user_login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- SPLASH SCREEN -->
+        <activity
+            android:name=".Splash"
+            android:label="Dan's Kitchen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FAVOURITES -->
+        <activity
+            android:name=".MyFavourites"
+            android:label="@string/title_activity_my_favourites"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- MY ACCOUNT -->
+        <activity
+            android:name=".MyAccount"
+            android:label="@string/title_activity_my_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- CHANGE PASSWORD -->
+        <activity
+            android:name=".ChangeResetPassword"
+            android:label="@string/title_activity_change_reset_password"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

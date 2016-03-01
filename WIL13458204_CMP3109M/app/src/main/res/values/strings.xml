@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- APPLICATION NAME -->
+    <string name="app_name">WIL13458204_MobileComputing</string>
+
+    <!-- ACTIVITY TITLES -->
+    <string name="title_activity_get_recipe">Recipe</string>
+    <string name="title_activity_random_recipes">Home</string>
+    <string name="title_activity_user__login">User Registration</string>
+    <string name="title_activity_user_login">Login</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_my_favourites">My Favourites</string>
+    <string name="title_activity_change_reset_password">ChangeResetPassword</string>
+    <string name="title_activity_my_account">Settings</string>
+    <string name="title_activity_search_recipe">Search</string>
+
+    <!-- ACTION BAR OPTIONS -->
+    <string name="settings_logout">Logout</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- NAVIGATION DRAWER STRINGS -->
+    <string name="HeaderTitle">Active User:</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- LOGIN SMALL TEXT ACTIVITY LINKS-->
+    <string name="Register_user"><u>Register as a new user</u></string>
+    <string name="Forgotten_Pass"><u>Forgotten Password</u></string>
+
+    <!-- SECURITY QUESTIONS SPINNER -->
+    <string-array name="Security_Questions">
+        <item>Mothers maiden name?</item>
+        <item>Name of your first pet?</item>
+        <item>Where were you born?</item>
+        <item>Your first school?</item>
+        <item>Who was your childhood best friend?</item>
+        <item>The name of the first street you lived on?</item>
+    </string-array>
+
+    <!-- SEARCH RECIPE SPINNER MENU -->
+    <string name="Spinner_Prompt">Select an option</string>
+    <string-array name="Search_Type">
+        <item>Keyword</item>
+        <item>Single Ingredient</item>
+        <item>Multi Ingredient</item>
+        <item>Preparation Time (Minutes)</item>
+    </string-array>
+
+    <!-- SHARED PREFERENCES KEYS-->
+    <string name="isActiveUser">LoggedIn</string>
+    <string name="ActiveUsername">ActiveUsername</string>
+    <string name="ActiveFirstName">ActiveFirstName</string>
+    <string name="ActiveLastName">ActiveLastName</string>
+    <string name="ActiveUserID">ActiveUserID</string>
+    <string name="ActiveImageUri">ActiveUserProfilePictureUri</string>
+
+    <!-- SPLASH ACTIVITY STRINGS -->
+    <string name="SplashFooter">Powered by Campbells Kitchen API</string>
+    <string name="SplashTitle">DAN\'S KITCHEN</string>
+
+    <!-- PASSWORD CHANGE ACTIVITY STRINGS -->
+    <string name="PasswordChangeUniqueUsername">Enter Your Unique Username</string>
+    <string name="RetriveSQButton">Get Security Question</string>
+    <string name="SQTextView">Security Question</string>
+    <string name="SQATextView">Your Secure Answer</string>
+    <string name="EnterPass">Enter your new password</string>
+    <string name="ReEnterPass">Re-Enter your new password</string>
+    <string name="ChangePass">Change Password</string>
+
+    <!-- GET RECIPE ACTIVITY STRINGS -->
+    <string name="SaveToFaveBtn">Save to My Favourites</string>
+
+    <!-- MY ACCOUNT ACTIVITY STRINGS -->
+    <string name="RemoveAllFavs">Remove all favourites</string>
+    <string name="ClearHistorybtn">Clear all Search History</string>
+    <string name="ClearAppDatabtn">Remove all app Data</string>
+    <string name="ChangePassText">If you have forgotten or lost your password you can reset it here!</string>
+    <string name="RemoveFavsText">You can remove all of your favourites from here. Please note that once removed you will not be able to access your favourite recipes from My Favourites</string>
+    <string name="RemoveHistoryText">You can remove the search history from here. All historic searches will be removed and no recomendations wil be shown when searching.</string>
+    <string name="ClearAppDataText">You can clear the all app data from here. If you do this all user accounts, favourites and search history will be removed for all users</string>
+
+    <!-- NEW USER REGISTRATION ACTIVITY STRINGS -->
+    <string name="FNameText">First Name</string>
+    <string name="LNameText">Last Name</string>
+    <string name="UNameText">Username</string>
+    <string name="PassText">Password</string>
+    <string name="RePassText">Re-type Password</string>
+    <string name="RegisterButton">Register User</string>
+    <string name="ProfilePicText">Tap Image To Change Profile Picture</string>
+    <string name="SQSelectText">Select a Security Question</string>
+
+</resources>
